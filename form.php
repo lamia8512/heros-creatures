@@ -1,28 +1,26 @@
 <?php
     require_once 'partials/head.php';
-    require_once 'data.php';
 ?>
-<form method="post" >
-        <fieldset>
-          <legend>Add Customer</legend>
-          <div>
-            <label for="CompanyName">Company Name:</label>
-            <input type="text" name="CompanyName" value="" />
-          </div>
-          <div>
-            <label for="ContactName">Contact Name:</label>
-            <input type="text" name="ContactName" value="" />
-          </div>
-          <div>
-            <label for="Employees">Employee Count:</label>
-            <input type="text" name="Employees" value="" />
-          </div>
-          <div>
-            <label>&nbsp;</label>
-            <input type="submit" value="Submit" class="submit" />
-          </div>
-        </fieldset>
-</form>
+<h1>Nous contacter ! </h1>
+    <form action="">
+        <div class="container mt-5">
+            <div class="form-group">
+                <label for="email">Adresse e-mail</label>
+                <input type="email" class="form-control" name="email" placeholder="maria@gmail.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="prenom">Prénom</label>
+                <input type="text" class="form-control" name="prenom" placeholder="Marie" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" name="message" rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-warning mt-2">Envoyer</button>
+        </div>
+    </form>
 <?php
     require_once 'partials/footer.php';
-?>
