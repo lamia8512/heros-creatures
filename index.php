@@ -3,7 +3,7 @@
     require_once 'data.php';
     //var_dump($heros);
 ?>
-    <h1>Les heros le plus fun et mignon !</h1>
+    <h1>Les heros les plus funs et mignons !</h1>
     <div class="container-fluid my-5">
         <div class="row justify-content-between">
             <?php
